@@ -4,8 +4,8 @@ function Gamestyle(props) {
 
 
     const [purchased,setPurchased] = useState(false);
-    const [discount, setDiscount] = useState(props.price)
-    const [discount1, setDiscount1] = useState(props.price1)
+    const [discount, setDiscount] = useState(0)
+    const [discount1, setDiscount1] = useState(0)
 
     function cartgame() {
         console.log(props.name,"Added to cart");
@@ -14,12 +14,12 @@ function Gamestyle(props) {
     }
 
     function disAmt(disPrice) {
-        setDiscount(discount - (discount * disPrice /100));
+        setDiscount(props.price - (props.price * disPrice /100));
         console.log(discount);
     }
 
     function disAmt1(disPrice1) {
-        setDiscount1(discount1 -(discount1 * disPrice1 /100));
+        setDiscount1(props.price1 -(props.price1 * disPrice1 /100));
         console.log(discount1);
     }
 
