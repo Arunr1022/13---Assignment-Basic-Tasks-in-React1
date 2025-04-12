@@ -30,7 +30,7 @@ function Gamestyle(props) {
                 <img className="gameimg1" src={props.image1} alt="..." />
                 <p className="gamename1">{props.name1}</p>
                 <p className="gameprice">{props.price1}</p>
-                <p></p>
+                <p>Updated</p>
                 </div>
         );
     }
