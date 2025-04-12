@@ -11,31 +11,36 @@ function ListofGames() {
         id : 1,
         image : Image1,
         name : "The Last Of Us",
-        price : `£${3999}`
+        price : 3999,
+        discount : 20
     },
     {
         id : 2,
         image : Image2,
         name : "God Of War - Ragnarok",
-        price : `£${4999}`
+        price : 4999,
+        discount : 30
     },
     {
         id : 3,
         image : Image3,
         name : "Assassin Creed - Shadows",
-        price : `£${2499}`
+        price : 2499,
+        discount : 10
     },
     {
         id : 4,
         image : Image4,
         name : "WWE - 2k25",
-        price : `£${3499}`
+        price : 3499,
+        discount : 15
     },
     {
         id : 5,
         image : Image5,
         name : "GTA - V",
-        price : `£${1499}`
+        price : 1499,
+        discount : 25
     },
     ]
 
@@ -43,7 +48,9 @@ function ListofGames() {
     key={id} 
     image={item.image} 
     name={item.name} 
-    price={item.price}/>)
+    price={item.price}
+    discount={item.discount}
+    />)
 
     return(
         <>
