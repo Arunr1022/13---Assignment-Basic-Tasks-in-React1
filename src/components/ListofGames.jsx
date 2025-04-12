@@ -4,10 +4,11 @@ import Image3 from '../images/wp13980258-assassins-creed-shadows-phone-wallpaper
 import Image4 from '../images/wp15019307-wwe-2k25-wallpapers.webp'
 import Image5 from '../images/wp4897806-gta-5-iphone-wallpapers.jpg'
 import Games from './Gamestyle'
+import { useState } from 'react'
 
 function ListofGames() {
 
-    const GameCollection = [{
+    const [GameCollection, setGameCollection ] = useState([{
         id : 1,
         image : Image1,
         name : "The Last Of Us",
@@ -42,7 +43,15 @@ function ListofGames() {
         price : 1499,
         discount : 25
     },
-    ]
+    ]);
+
+    function GameDel(id) {
+        const newGamecollection = GameCollection.filter ((game)=> game.id != id)
+        setGameCollection(newGamecollection);
+        
+    }
+
+
 
     const gaming = GameCollection.map((item,id) => <Games 
     key={id} 
@@ -50,6 +59,8 @@ function ListofGames() {
     name={item.name} 
     price={item.price}
     discount={item.discount}
+    delete = {GameDel}
+    id={item.id}
     />)
 
     return(

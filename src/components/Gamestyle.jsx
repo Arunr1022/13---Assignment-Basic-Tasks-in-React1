@@ -39,6 +39,7 @@ function Gamestyle(props) {
                 <p>{discount}</p>
                 <button onClick={ ()=> disAmt(props.discount) }>Discount</button>
                 <button onClick={cartgame}>Add to cart</button>
+                <button onClick={ ()=> {props.delete(props.id)}}>Delete</button>
                 <p>{purchased ? `${props.name} Added to cart` : ""}</p>
             </div>
         );
@@ -56,6 +57,7 @@ function Gamestyle(props) {
                 <p>{discount1}</p>
                 <button onClick={ ()=> disAmt1(props.discount1) }>Discount</button>
                 <button onClick={cartgame2}>Add to cart</button>
+                <button onClick={ ()=> {props.delete(props.id)}}>Delete</button>
                 <p>{purchased ? `${props.name1} Added to cart` : "" }</p>
                 </div>
         );
