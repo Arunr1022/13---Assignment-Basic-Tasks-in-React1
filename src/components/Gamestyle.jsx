@@ -3,30 +3,24 @@ import { useState } from "react";
 function Gamestyle(props) {
 
 
-    const [purchased,setPurchased] = useState(false);
+    const [cart,setCart] = useState(false);
     const [discount, setDiscount] = useState(0)
     const [discount1, setDiscount1] = useState(0)
 
     function cartgame() {
-        console.log(props.name,"Added to cart");
-        setPurchased (true);
-        console.log(purchased);
+        setCart (true);
     }
 
     function disAmt(disPrice) {
         setDiscount(props.price - (props.price * disPrice /100));
-        console.log(discount);
     }
 
     function disAmt1(disPrice1) {
         setDiscount1(props.price1 -(props.price1 * disPrice1 /100));
-        console.log(discount1);
     }
 
     function cartgame2() {
-        console.log(props.name1,"Added to cart")
-        setPurchased(true);
-        console.log(purchased)
+        setCart(true);
     }
     
     if (props.image) {
@@ -40,7 +34,7 @@ function Gamestyle(props) {
                 <button onClick={ ()=> disAmt(props.discount) }>Discount</button>
                 <button onClick={cartgame}>Add to cart</button>
                 <button onClick={ ()=> {props.delete(props.id)}}>Delete</button>
-                <p>{purchased ? `${props.name} Added to cart` : ""}</p>
+                <p>{cart ? `${props.name} Added to cart` : ""}</p>
             </div>
         );
     }
@@ -58,7 +52,7 @@ function Gamestyle(props) {
                 <button onClick={ ()=> disAmt1(props.discount1) }>Discount</button>
                 <button onClick={cartgame2}>Add to cart</button>
                 <button onClick={ ()=> {props.delete(props.id)}}>Delete</button>
-                <p>{purchased ? `${props.name1} Added to cart` : "" }</p>
+                <p>{cart ? `${props.name1} Added to cart` : "" }</p>
                 </div>
         );
     }
