@@ -1,4 +1,4 @@
-import Lou from '../images/wp9723146-last-of-us-4k-phone-wallpapers.jpg';
+import Lou from '../images/wp9723146-last-of-us-4k-phone-wallpapers.jpg'
 
 function Lastofus() {
 

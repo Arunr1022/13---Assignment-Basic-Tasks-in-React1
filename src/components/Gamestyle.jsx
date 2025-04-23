@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Gamestyle(props) {
 
@@ -32,7 +33,10 @@ function Gamestyle(props) {
                 <p className="gamediscount">{props.discount}</p>
                 <p>{discount}</p>
                 <button onClick={ ()=> disAmt(props.discount) }>Discount</button>
+                <Link to={"/lou"}>
                 <button onClick={cartgame}>Add to cart</button>
+                </Link>
+
                 <button onClick={ ()=> {props.delete(props.id)}}>Delete</button>
                 <p>{cart ? `${props.name} Added to cart` : ""}</p>
             </div>
