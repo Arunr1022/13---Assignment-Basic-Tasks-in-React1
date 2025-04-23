@@ -11,14 +11,17 @@ import './App.css'
 function App() {
   return (
     <>
-    <Navbar />
-    <Mid />
-    <ListGame />
-    <ListGame2 />
-    <Routes>
-      <Route path='/' element={<Gamestyle/>}/>
-      <Route path='/lou' element={<Lou/>} />
-    </Routes>
+      <Routes>
+        <Route path='/' element={
+          <>
+            <Navbar />
+            <Mid />
+            <ListGame />
+            <ListGame2 />
+          </>
+        } />
+        <Route path='/lou' element={<Lou />} />
+      </Routes>
     </>
   )
 }
