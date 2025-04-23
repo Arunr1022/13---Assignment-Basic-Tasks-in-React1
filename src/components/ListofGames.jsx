@@ -1,8 +1,8 @@
-import Image1 from '../images/wp9723146-last-of-us-4k-phone-wallpapers.jpg'
-import Image2 from '../images/wp13048647-god-of-war-ragnarok-iphone-wallpapers.jpg'
-import Image3 from '../images/wp13980258-assassins-creed-shadows-phone-wallpapers.jpg'
-import Image4 from '../images/wp15019307-wwe-2k25-wallpapers.webp'
-import Image5 from '../images/wp4897806-gta-5-iphone-wallpapers.jpg'
+import Image1 from '../images/Mainpageimages/wp9723146-last-of-us-4k-phone-wallpapers.jpg'
+import Image2 from '../images/Mainpageimages/wp13048647-god-of-war-ragnarok-iphone-wallpapers.jpg'
+import Image3 from '../images/Mainpageimages/wp13980258-assassins-creed-shadows-phone-wallpapers.jpg'
+import Image4 from '../images/Mainpageimages/wp15019307-wwe-2k25-wallpapers.webp'
+import Image5 from '../images/Mainpageimages/wp4897806-gta-5-iphone-wallpapers.jpg'
 import Games from './Gamestyle'
 import { useState } from 'react'
 

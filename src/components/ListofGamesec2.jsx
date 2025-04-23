@@ -1,6 +1,6 @@
-import img from '../images/wp1837063-dying-light-wallpapers.jpg'
-import img2 from '../images/wp2940535-call-of-duty-4-game-wallpaper-hd.jpg'
-import img3 from '../images/wp12013632-resident-evil-remaster-wallpapers.jpg'
+import img from '../images/Mainpageimages/wp1837063-dying-light-wallpapers.jpg'
+import img2 from '../images/Mainpageimages/wp2940535-call-of-duty-4-game-wallpaper-hd.jpg'
+import img3 from '../images/Mainpageimages/wp12013632-resident-evil-remaster-wallpapers.jpg'
 import Games from '../components/Gamestyle'
 import { useState } from 'react'
 

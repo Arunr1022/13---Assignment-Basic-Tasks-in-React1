@@ -1,4 +1,4 @@
-import BGimage from '../images/wp10839428-ghost-of-tsushima-desktop-wallpapers.jpg'
+import BGimage from '../images/Mainpageimages/wp10839428-ghost-of-tsushima-desktop-wallpapers.jpg'
 
 function midsection() {
     return(
