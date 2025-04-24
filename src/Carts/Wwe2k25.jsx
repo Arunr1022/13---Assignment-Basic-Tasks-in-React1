@@ -1,7 +1,6 @@
+import Wwwe2k25 from '../images/separateimages/wp15019330-wwe-2k25-wallpapers.webp';
 
-import GodOfwar from '../images/separateimages/wp11484884-god-of-war-ragnarok-desktop-wallpapers.jpg';
-
-function Godofwar() {
+function Wwe2k25Full() {
 
     const systemreq = [
         {
@@ -18,11 +17,11 @@ function Godofwar() {
         <>
         <div className="Lastofuscontainer">
         <div className='Lastofusdiv1'>
-        <img className='Lastofus' src={GodOfwar} alt="..." />
+        <img className='Lastofus' src={Wwwe2k25} alt="..." />
         </div>
 
         <div className='Lastofusdiv2'>
-        <h2 className='GameHeading'>God Of War Ragnorak</h2>
+        <h2 className='GameHeading'>WWE 2k25</h2>
         <p className='p1'>Full Edition</p>
         <p className="p2">System Requirements</p>
         {systemreq.map((item, id)=>(
@@ -41,4 +40,4 @@ function Godofwar() {
     
 }
 
-export default Godofwar
+export default Wwe2k25Full

@@ -34,17 +34,31 @@ function Gamestyle(props) {
                 <p>{discount}</p>
                 <button onClick={ ()=> disAmt(props.discount) }>Discount</button>
 
-                {props.name === "The Last Of Us" && (
+                {props.id === 1 && (
                 <Link to="/Lou">
                     <button onClick={cartgame}>Add to cart</button>
                 </Link>
                 )}
-                {props.name === "God Of War - Ragnarok" && (
+                {props.id === 2 && (
                 <Link to="/Godofwar">
                     <button onClick={cartgame}>Add to cart</button>
                 </Link>
                 )}
-
+                {props.id === 3 && (
+                <Link to="/AssasinCreed">
+                    <button onClick={cartgame}>Add to cart</button>
+                </Link>
+                )}
+                {props.id === 4 && (
+                <Link to="/Wwwe2k25">
+                    <button onClick={cartgame}>Add to cart</button>
+                </Link>
+                )}
+                {props.id === 5 && (
+                <Link to="/Gtav">
+                    <button onClick={cartgame}>Add to cart</button>
+                </Link>
+                )}                
                 <p>{cart ? `${props.name} Added to cart` : ""}</p>
             </div>
         );

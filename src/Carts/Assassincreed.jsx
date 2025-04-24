@@ -1,7 +1,6 @@
+import Assasincreed from '../images/separateimages/wp13980231-assassins-creed-shadows-desktop-wallpapers.jpg'
 
-import GodOfwar from '../images/separateimages/wp11484884-god-of-war-ragnarok-desktop-wallpapers.jpg';
-
-function Godofwar() {
+function AssasinCreedShadow() {
 
     const systemreq = [
         {
@@ -18,11 +17,11 @@ function Godofwar() {
         <>
         <div className="Lastofuscontainer">
         <div className='Lastofusdiv1'>
-        <img className='Lastofus' src={GodOfwar} alt="..." />
+        <img className='Lastofus' src={Assasincreed} alt="..." />
         </div>
 
         <div className='Lastofusdiv2'>
-        <h2 className='GameHeading'>God Of War Ragnorak</h2>
+        <h2 className='GameHeading'>Assasin Creed - Shadows</h2>
         <p className='p1'>Full Edition</p>
         <p className="p2">System Requirements</p>
         {systemreq.map((item, id)=>(
@@ -41,4 +40,4 @@ function Godofwar() {
     
 }
 
-export default Godofwar
+export default AssasinCreedShadow
