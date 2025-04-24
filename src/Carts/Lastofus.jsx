@@ -1,6 +1,10 @@
+import { useLocation } from 'react-router-dom';
 import Lou from '../images/separateimages/wp2243855-tlou-wallpapers.jpg';
 
 function Lastofus() {
+
+    const location = useLocation();
+    const { game } = location.state || {};
 
     const systemreq = [
         {

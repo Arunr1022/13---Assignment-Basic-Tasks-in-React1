@@ -45,13 +45,6 @@ function ListofGames() {
     },
     ]);
 
-    function GameDel(id) {
-        const newGamecollection = GameCollection.filter ((game)=> game.id != id)
-        setGameCollection(newGamecollection);
-        
-    }
-
-
 
     const gaming = GameCollection.map((item,id) => <Games 
     key={id} 
@@ -59,7 +52,6 @@ function ListofGames() {
     name={item.name} 
     price={item.price}
     discount={item.discount}
-    delete = {GameDel}
     id={item.id}
     />)
 

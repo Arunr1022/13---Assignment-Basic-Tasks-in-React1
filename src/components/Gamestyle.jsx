@@ -36,8 +36,6 @@ function Gamestyle(props) {
                 <Link to={"/lou"}>
                 <button onClick={cartgame}>Add to cart</button>
                 </Link>
-
-                <button onClick={ ()=> {props.delete(props.id)}}>Delete</button>
                 <p>{cart ? `${props.name} Added to cart` : ""}</p>
             </div>
         );
