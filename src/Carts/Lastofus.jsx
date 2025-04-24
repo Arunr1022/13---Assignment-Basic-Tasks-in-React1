@@ -7,7 +7,7 @@ function Lastofus() {
             id : 1,
             cpu : "Intel Core i7 4770K AMD Ryzen 5 1500X",
             ram : "16GB",
-            gpu : "Nvidia GeForce GTX 970 AMD Radeon RX 470/ Nvidia GeForce GTX 1050/, Ti AMD Radeon RX 5600 XT",
+            gpu : "Nvidia GeForce GTX 970 AMD Radeon RX 470/ Nvidia GeForce GTX 1050/ Ti AMD Radeon RX 5600 XT.",
             storage : "100GB SSD"
         }
     ];
