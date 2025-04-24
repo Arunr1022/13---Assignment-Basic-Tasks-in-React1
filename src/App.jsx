@@ -5,6 +5,7 @@ import ListGame from './components/ListofGames'
 import ListGame2 from './components/ListofGamesec2'
 import Gamestyle from './components/Gamestyle'
 import Lou from './Carts/Lastofus'
+import Godofwar from './Carts/Godofwar'
 import './App.css'
 
 
@@ -21,6 +22,7 @@ function App() {
           </>
         } />
         <Route path='/lou' element={<Lou />} />
+        <Route path='/godofwar' element={<Godofwar />} />
       </Routes>
     </>
   )
