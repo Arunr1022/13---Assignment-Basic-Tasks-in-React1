@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
 
     return (
@@ -18,7 +20,10 @@ function Navbar() {
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search Store" aria-label="Search" id="inputtext"/>
                                 <button className="btn btn-outline-success" type="submit" id="search">Search</button>
+                                <Link to="/Signin" >
                                 <button className="btn btn-outline-success" type="submit" id="signin">Sign in</button>
+                                </Link>
+                                
                         </form>
                     </div>
             </nav>

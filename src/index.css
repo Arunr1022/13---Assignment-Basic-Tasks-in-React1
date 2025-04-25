@@ -100,3 +100,19 @@ p{
 .b1{
   margin-left: 20%;
 }
+
+.signinpage, .signuppage{
+  padding-top: 50px;
+  padding-left: 40%;
+  height: 100vh;
+  background-color: white;
+}
+
+#Username1, #InputEmail1, #Mnumber1, #InputPassword1{
+  width: 40%;
+}
+
+
+.Newaccountpage{
+  margin-top: 10px;
+}

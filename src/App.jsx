@@ -12,6 +12,8 @@ import Gtav from './Carts/Gtafive'
 import Dyinglight from './Carts/Dyinglight'
 import Callofdutymw from './Carts/Callofduty'
 import Residentevil from './Carts/Residentevil'
+import Signin from './components/Signinform'
+import Signup from './components/Signupform'
 import './App.css'
 
 
@@ -35,6 +37,8 @@ function App() {
         <Route path='/dyinglight' element={<Dyinglight />} />
         <Route path='/callofdutymw' element={<Callofdutymw />} />
         <Route path='/residentevil' element={<Residentevil />} />
+        <Route path='/signin' element={<Signin />} />
+        <Route path='/signup' element={<Signup />} />
       </Routes>
     </>
   )
