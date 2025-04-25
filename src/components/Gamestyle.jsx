@@ -75,8 +75,26 @@ function Gamestyle(props) {
                 <p className="gamediscount">{props.discount1}</p>
                 <p>{discount1}</p>
                 <button onClick={ ()=> disAmt1(props.discount1) }>Discount</button>
-                <button onClick={cartgame2}>Add to cart</button>
-                <button onClick={ ()=> {props.delete(props.id)}}>Delete</button>
+                {/* <button onClick={cartgame2}>Add to cart</button> */}
+
+                {props.name1 === "Dying Light" && (
+                <Link to="/Dyinglight">
+                    <button onClick={cartgame}>Add to cart</button>
+                </Link>
+                )}                
+
+                {props.name1 === "Call Of Duty MW4" && (
+                <Link to="/Callofdutymw">
+                    <button onClick={cartgame}>Add to cart</button>
+                </Link>
+                )}  
+
+                {props.name1 === "Resident Evil 4" && (
+                <Link to="/Residentevil">
+                    <button onClick={cartgame}>Add to cart</button>
+                </Link>
+                )}                 
+
                 <p>{cart ? `${props.name1} Added to cart` : "" }</p>
                 </div>
         );

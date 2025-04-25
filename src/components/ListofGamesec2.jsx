@@ -29,10 +29,6 @@ function ListofGameSec2() {
     }
 ]);
 
-function GameDel2(id) {
-    const newListgameSec2 = Listgamesec2.filter ((game)=> game.id != id);
-    setListgamesec2(newListgameSec2);
-}
 
     const MapListOfGames = Listgamesec2.map((item,id)=> <Games 
     key={id}  
@@ -40,7 +36,6 @@ function GameDel2(id) {
     name1 = {item.name1}
     price1 = {item.price1}
     discount1={item.discount1}
-    delete = {GameDel2}
     id = {item.id}
     />)
 
