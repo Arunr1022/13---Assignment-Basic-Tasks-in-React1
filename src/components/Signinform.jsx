@@ -20,7 +20,7 @@ function Signin() {
         }
 
         if(!userpassword){
-            alert("Password field id empty");
+            alert("Password field is empty");
             return;
         }
 
