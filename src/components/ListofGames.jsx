@@ -45,7 +45,6 @@ function ListofGames() {
     },
     ]);
 
-
     const gaming = GameCollection.map((item,id) => <Games 
     key={id} 
     image={item.image} 

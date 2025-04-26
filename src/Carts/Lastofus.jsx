@@ -1,4 +1,3 @@
-
 import Lou from '../images/separateimages/wp2243855-tlou-wallpapers.jpg';
 
 function Lastofus() {
@@ -31,7 +30,7 @@ function Lastofus() {
         <p className='p3'>Cpu : {item.cpu}</p>
         <p className='p4'>RAM : {item.ram}</p>
         <p className='p5'>Gpu : {item.gpu}</p>
-        <p className='p6'>Storage : {item.storage}</p>       
+        <p className='p6'>Storage : {item.storage}</p>
         </div>
         ))}
         <button className='btn btn-primary b1'>Buy Now</button>
