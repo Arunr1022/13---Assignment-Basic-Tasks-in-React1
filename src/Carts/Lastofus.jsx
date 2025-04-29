@@ -1,6 +1,10 @@
 import Lou from '../images/separateimages/wp2243855-tlou-wallpapers.jpg';
+import { useLocation } from 'react-router-dom';
 
 function Lastofus() {
+
+    const location = useLocation();
+    const gameDetails = location.state?.game;
 
 
     const systemreq = [
@@ -10,7 +14,7 @@ function Lastofus() {
             ram : "16GB",
             gpu : "Nvidia GeForce GTX 970 AMD Radeon RX 470/ Nvidia GeForce GTX 1050/ Ti AMD Radeon RX 5600 XT.",
             storage : "100GB SSD"
-        }
+        },
     ];
 
 
@@ -22,7 +26,7 @@ function Lastofus() {
         </div>
 
         <div className='Lastofusdiv2'>
-        <h2 className='GameHeading'>Last Of Us</h2>
+        <h2 className='GameHeading'>{gameDetails?.name}</h2>
         <p className='p1'>Full Edition</p>
         <p className="p2">System Requirements</p>
         {systemreq.map((item, id)=>(
