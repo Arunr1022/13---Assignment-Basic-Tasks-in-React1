@@ -1,6 +1,10 @@
 import Dlights from '../images/separateimages/wp1837072-dying-light-wallpapers.jpg';
+import { useLocation } from 'react-router-dom';
 
 function DieLights() {
+
+    const location = useLocation();
+    const gameDetails = location.state?.game
 
     const systemreq = [
         {
@@ -22,14 +26,15 @@ function DieLights() {
 
         <div className='Lastofusdiv2'>
         <h2 className='GameHeading'>Dying Light</h2>
-        <p className='p1'>Full Edition</p>
-        <p className="p2">System Requirements</p>
+        <p className='details'>Full Edition</p>
+        <p className="details">System Requirements</p>
         {systemreq.map((item, id)=>(
         <div key={id}>
-        <p className='p3'>Cpu : {item.cpu}</p>
-        <p className='p4'>RAM : {item.ram}</p>
-        <p className='p5'>Gpu : {item.gpu}</p>
-        <p className='p6'>Storage : {item.storage}</p>       
+        <p className='details'>Cpu : {item.cpu}</p>
+        <p className='details'>RAM : {item.ram}</p>
+        <p className='details'>Gpu : {item.gpu}</p>
+        <p className='details'>Storage : {item.storage}</p> 
+        <p className="details">-{gameDetails.discount1}% <s>₹{gameDetails?.price1}</s> ₹{gameDetails?.price1 - (gameDetails?.price1 * gameDetails?.discount1 / 100)}</p>      
         </div>
         ))}
         <button className='btn btn-primary b1'>Buy Now</button>
