@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Gamestyle(props) {
@@ -11,27 +10,27 @@ function Gamestyle(props) {
 
                 {props.id === 1 && (
                 <Link to="/Lou" state={{ game : props }}>
-                    <button >Add to cart</button>
+                    <button className="btn btn-primary">Add to cart</button>
                 </Link>
                 )}
                 {props.id === 2 && (
                 <Link to="/Godofwar" state={{ game : props }}>
-                    <button >Add to cart</button>
+                    <button className="btn btn-primary">Add to cart</button>
                 </Link>
                 )}
                 {props.id === 3 && (
                 <Link to="/AssasinCreed" state={{ game : props }}>
-                    <button >Add to cart</button>
+                    <button className="btn btn-primary">Add to cart</button>
                 </Link>
                 )}
                 {props.id === 4 && (
                 <Link to="/Wwwe2k25" state={{ game : props }}>
-                    <button >Add to cart</button>
+                    <button className="btn btn-primary">Add to cart</button>
                 </Link>
                 )}
                 {props.id === 5 && (
                 <Link to="/Gtav" state={{ game : props }}>
-                    <button >Add to cart</button>
+                    <button className="btn btn-primary">Add to cart</button>
                 </Link>
                 )}                
             </div>
@@ -48,19 +47,19 @@ function Gamestyle(props) {
 
                 {props.name1 === "Dying Light" && (
                 <Link to="/Dyinglight" state={{ game : props }}>
-                    <button >Add to cart</button>
+                    <button className="btn btn-primary">Add to cart</button>
                 </Link>
                 )}                
 
                 {props.name1 === "Call Of Duty MW4" && (
                 <Link to="/Callofdutymw" state={{ game : props }}>
-                    <button >Add to cart</button>
+                    <button className="btn btn-primary">Add to cart</button>
                 </Link>
                 )}  
 
                 {props.name1 === "Resident Evil 4" && (
                 <Link to="/Residentevil" state={{ game : props }}>
-                    <button >Add to cart</button>
+                    <button className="btn btn-primary">Add to cart</button>
                 </Link>
                 )} 
                 </div>
