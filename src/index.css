@@ -15,21 +15,19 @@ body{
   width: 150px;
 }
 
-.midsectionimg{
-  text-align: center;
-  margin-top: 10px;
+#carouselExampleControls{
+  margin-top: 25px;
 }
 
-.midsectionimg1{
-
-  width: 1000px;
-  border-radius: 5px;
-  border: 1px solid white;
+.carousel-inner img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .gameimg{
-  width: 200px;
-  height: 330px;
+  width: 250px;
+  height: 380px;
   border: 1px solid white;
   border-radius: 5px;
 }

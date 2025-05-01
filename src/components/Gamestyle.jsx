@@ -32,7 +32,43 @@ function Gamestyle(props) {
                 <Link to="/Gtav" state={{ game : props }}>
                     <button className="btn btn-primary">Add to cart</button>
                 </Link>
-                )}                
+                )}
+                {props.id === 6 && (
+                <Link to="/Gtav" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )}
+                {props.id === 7 && (
+                <Link to="/Gtav" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )}
+                {props.id === 8 && (
+                <Link to="/Gtav" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )}
+                {props.id === 9 && (
+                <Link to="/Gtav" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )}
+                {props.id === 10 && (
+                <Link to="/Gtav" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )}
+                {props.id === 11 && (
+                <Link to="/Gtav" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )}
+                {props.id === 12 && (
+                <Link to="/Gtav" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )}
+
             </div>
         );
     }
@@ -58,6 +94,21 @@ function Gamestyle(props) {
                 )}  
 
                 {props.name1 === "Resident Evil 4" && (
+                <Link to="/Residentevil" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )} 
+                {props.name1 === "Days Gone" && (
+                <Link to="/Residentevil" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )} 
+                {props.name1 === "JEDI - Survivor" && (
+                <Link to="/Residentevil" state={{ game : props }}>
+                    <button className="btn btn-primary">Add to cart</button>
+                </Link>
+                )} 
+                {props.name1 === "Spiderman" && (
                 <Link to="/Residentevil" state={{ game : props }}>
                     <button className="btn btn-primary">Add to cart</button>
                 </Link>
