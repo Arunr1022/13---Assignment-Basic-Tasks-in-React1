@@ -1,5 +1,6 @@
 import Assasincreed from '../images/separateimages/wp13980231-assassins-creed-shadows-desktop-wallpapers.jpg';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function AssasinCreedShadow() {
 
@@ -19,6 +20,28 @@ function AssasinCreedShadow() {
 
     return(
         <>
+            <nav className="navbar navbar-expand-lg bg-dark" id="navbarcustom">
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 custom">
+                            <li className="nav-item">
+                            <Link className="nav-link" aria-current="page" to="/">Home</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link className="nav-link" aria-current="page" to="/">Browse</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link className="nav-link" aria-current="page" to="/">News</Link>
+                            </li>
+                        </ul>
+                        <form className="d-flex" role="search">
+                            <input className="form-control me-2" type="search" placeholder="Search Store" aria-label="Search" id="inputtext"/>
+                                <button className="btn btn-outline-success" type="submit" id="search">Search</button>
+                                <Link to="/Signin" >
+                                <button className="btn btn-outline-success" type="submit" id="signin">Sign in</button>
+                                </Link>
+                        </form>
+                    </div>
+            </nav>
         <div className="Lastofuscontainer">
         <div className='Lastofusdiv1'>
         <img className='Lastofus' src={Assasincreed} alt="..." />

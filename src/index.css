@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  padding-top: 85px;
 }
 
 .custom .nav-link{
@@ -13,10 +14,6 @@ body{
 
 #signin{
   width: 150px;
-}
-
-#carouselExampleControls{
-  margin-top: 25px;
 }
 
 .carousel-inner img{

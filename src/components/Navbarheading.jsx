@@ -4,7 +4,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-dark" id="navbarcustom">
+            <nav className="navbar navbar-expand-lg bg-dark fixed-top" id="navbarcustom">
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 custom">
                             <li className="nav-item">
